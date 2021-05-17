@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    style="?android:attr/buttonBarButtonStyle"
+    tools:context="com.example.jeremyfrey.serviceapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="20"
+        android:weightSum="100"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:id="@+id/buttonProfile"
+            android:layout_width="0px"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/buttonSignOut"
+            android:layout_width="0px"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:text="Sign-out"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/buttonViewCart"
+            android:layout_width="0px"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:text="ViewCart"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/buttonHome"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:onClick="onClick"
+            android:text="Home" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="80"
+        android:background="@drawable/lawn">
+
+        <Button
+            android:id="@+id/button_Lawn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#4ecc00"
+            android:text="@string/lawn_and_yard_maintenance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="386dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/button_Lawn"
+            android:inputType="none"
+            android:text="@string/please_select_service_tile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ServiceApp</string>
+    <string name="sign_out">Sign-Out</string>
+    <string name="view_cart">View Cart</string>
+    <string name="profile">Profile</string>
+    <string name="please_select_type_of_service">Please Select Type of Service:</string>
+    <string name="pool_and_spa_maintenance">POOL AND SPA MAINTENANCE</string>
+    <string name="lawn_and_yard_maintenance">LAWN AND YARD MAINTENANCE</string>
+    <string name="some_other_service">SOME OTHER SERVICE</string>
+    <string name="please_select_service_tile">Please Select Service Tile:</string>
+
+</resources>

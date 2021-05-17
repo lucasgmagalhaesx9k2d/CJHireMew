@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    style="?android:attr/buttonBarButtonStyle"
+    tools:context="com.example.jeremyfrey.serviceapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="20"
+        android:weightSum="100"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:id="@+id/buttonProfile"
+            android:layout_width="0px"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/buttonSignOut"
+            android:layout_width="0px"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:text="Sign-out"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/buttonViewCart"
+            android:layout_width="0px"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:text="ViewCart"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/buttonSeach"
+            android:layout_width="0px"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_weight="80"
+        android:background="@drawable/house">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="386dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:inputType="none"
+            android:text="@string/please_select_type_of_service"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/button_Lawn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:background="#4ecc00"
+            android:text="@string/lawn_and_yard_maintenance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/button_Pool"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="177dp"
+            android:background="#0041cc"
+            android:text="@string/pool_and_spa_maintenance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/button_Other"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="96dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/some_other_service"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

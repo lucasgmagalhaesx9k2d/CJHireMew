@@ -1,5 +1,6 @@
 package com.example.jeremyfrey.serviceapp;
 
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,25 +21,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonPool.setOnClickListener(this);
         buttonOther = (Button) findViewById(R.id.button_Other);
         buttonOther.setOnClickListener(this);
+
     }
 
     public void homeView(View v){
         if(v.equals(buttonLawn)) {
             //lawn view
             setContentView(R.layout.activity_lawn_tiles);
-            //buttonPool.setVisibility(View.INVISIBLE);
-            //buttonOther.setVisibility(View.INVISIBLE);
-            //Toast.makeText(getApplicationContext(), "lawn view...",
-                    //Toast.LENGTH_SHORT).show();
+
         }
 
         else if(v.equals(buttonPool)) {
             //pool View
             setContentView(R.layout.activity_pool_tiles);
-            //buttonLawn.setVisibility(View.INVISIBLE);
-            //buttonOther.setVisibility(View.INVISIBLE);
-            //Toast.makeText(getApplicationContext(), "pool view...",
-                    //Toast.LENGTH_SHORT).show();
+
         }
         else if(v.equals(buttonOther)){
             //other View
